@@ -25,13 +25,7 @@ public class Publisher {
     public Publisher() {
     }
 
-    public Set<Book> getBooks() {
-        return books;
-    }
 
-    public void setBooks(Set<Book> books) {
-        this.books = books;
-    }
 
     @Override
     public String toString() {
@@ -59,6 +53,8 @@ public class Publisher {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
+
+
 
     public Long getId() {
         return id;
@@ -106,5 +102,13 @@ public class Publisher {
 
     public void setZip(String zip) {
         this.zip = zip;
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 }
